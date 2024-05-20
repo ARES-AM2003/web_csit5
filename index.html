@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
   </head>
 
   <body>
     <form action="">
-      <div class="flex w-full justify-center">
-        <h1 class="text-lg">"Regestration from"</h1>
+      <div class="main_div">
+      <div class="heading w-full justify-center">
+        <h1 class="text-lg">"Registration form"</h1>
       </div>
-      <div class="main flex mx-auto w-full justify-center mt-10">
+      <div class="main flex mx-auto w-full justify-center mt-10 my-4">
         <div class="main_element ">
-          <div class="elememts grid-cols-2 gap-2">
+          <div class="elememts grid-cols-2 gap-x-6">
             <div><label for="">first name:</label></div>
             <div>
               <input
@@ -59,13 +64,39 @@
               />
             </div>
           </div>
-          <div class="elememts grid-cols-2 gap-2">
+          <div class="elememts ">
+            <div><label for="">Gender:</label></div>
             <div>
-              <button class="p-4 bg-[#1d4ed8] rounded-xl">Submit</button>
+              <input
+              type="radio"
+              id="male"
+              name="Gender"
+              />
+              <label for="">male</label>
+              <input
+              type="radio"
+              id="Female"
+              name="Gender"
+              
+              />
+              <label for="">Female</label>
+              <input
+              type="radio"
+              id="other"
+              name="Gender"
+              
+              />
+              <label for="">other</label>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; ">
+            <div>
+              <button style="background-color: burlywood; padding: 6px; border-radius: 10px; width: 140px;  " >Submit</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </form>
   </body>
 </html>
