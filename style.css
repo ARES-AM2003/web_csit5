@@ -66,8 +66,48 @@ body {
     grid-template-rows: auto;
     gap: 20px; */
 /* } */
-.gender{
-grid-column: span 2;
-margin-bottom: 20px;
-margin-top: 10px;
+.gender {
+  grid-column: span 2;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+/* for hover  */
+.hover {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: wheat;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+.first{
+  width: 50%;
+  height: 90%;
+  display: flex;
+}
+.second{
+  width: 50%;
+  height: 90%;
+  /* display: block; */
+  display: flex;
+}
+.hover:hover{
+  /* display: block; */
+  height: 500px;
+}
+.content{
+  display: none;
+}
+.hover:hover .content{
+  display: flex;
+  
+}
+img{
+  width: 100%;
+  height: 100%;
+  
+  display: block;
 }
