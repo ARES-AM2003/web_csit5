@@ -77,37 +77,49 @@ body {
   height: 50px;
   border-radius: 10px;
   margin: auto;
-  background-color: wheat;
+  /* background-color: wheat; */
   justify-content: center;
   align-items: center;
   position: relative;
   display: flex;
 }
 .first{
+  position: relative;
   width: 50%;
   height: 90%;
   display: flex;
 }
 .second{
+  position: relative;
   width: 50%;
   height: 90%;
   /* display: block; */
-  display: flex;
+  display: block;
 }
 .hover:hover{
+  position: absolute;
   /* display: block; */
-  height: 500px;
+  height: 200px;
 }
 .content{
   display: none;
 }
 .hover:hover .content{
+  position: relatfive;
   display: flex;
   
 }
 img{
+  position: relative;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
-  
+  margin: 5px;
   display: block;
+}
+.top{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
