@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Color</title>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      var div = document.getElementById("myDiv");
+      var current =div.backgroundColor;
+      if (current == "lightgray") {
+        div.style.backgroundColor = "blue";
+      } else {
+        div.style.backgroundColor = "lightgray";
+      }
+    }
+  </script>
+</body>
+</html>
