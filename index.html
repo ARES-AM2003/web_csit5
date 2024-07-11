@@ -4,64 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+      /* .hover:hover+.on_hover_enable{
+  display: block;
+} */
+    </style>
   </head>
 
   <body>
+    <!-- for hover -->
+    <div class="hover">
+      <!-- hover to expand  -->
+       
+       <div class="first">
+        <div class="content"><p>sdfsdfsdfsdf</p>
+        <a href="www.youtube.com">youtube</a></div>
+       </div>
+       <div class="second">
+        <h1>sdkjf</h1>
+        <div class="top">
+          <div class="content">
+            <img src="https://img.mensxp.com/media/content/2015/Apr/harley0_1429509840.jpg" alt="">
+            <img src="https://bikes.motobank.co.uk/storage/keeway/v-cruise-125300-1291/i/photo-1291-11526.jpg" alt="">
+            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/139417/sr250-right-side-view-2.png?isig=0&q=80" alt="">
+          </div></div></div>
+    </div>
+
+<!-- ---------------------------------------------- -->
+
     <form action="">
-      <div class="flex w-full justify-center">
-        <h1 class="text-lg">"Regestration from"</h1>
-      </div>
-      <div class="main flex mx-auto w-full justify-center mt-10">
-        <div class="main_element ">
-          <div class="elememts grid-cols-2 gap-2">
-            <div><label for="">first name:</label></div>
-            <div>
-              <input
-                type="text"
-                class="border-solid border-2 border-black-200"
-              />
+      <div class="main_div">
+        <div class="heading w-full justify-center">
+          <h1 class="text-lg">"Registration form"</h1>
+        </div>
+        <div class="main flex mx-auto w-full justify-center mt-10 my-4">
+          <div class="main_element">
+            
+              <div><label for="">first name:</label></div>
+              <div>
+                <input
+                  type="text"
+                  class="border-solid border-2 border-black-200"
+                />
+              </div>
+            
+            
+              <div><label for="">last name:</label></div>
+              <div>
+                <input
+                  type="text"
+                  class="border-solid border-2 border-black-200"
+                />
+              </div>
+            
+            
+              <div><label for="">Email:</label></div>
+              <div>
+                <input
+                  type="email"
+                  class="border-solid border-2 border-black-200"
+                />
+              </div>
+            
+            
+              <div><label for="">Password:</label></div>
+              <div>
+                <input
+                  type="password"
+                  class="border-solid border-2 border-black-200"
+                />
+              </div>
+            
+            
+              <div><label for="">confirm password:</label></div>
+              <div>
+                <input
+                  type="password"
+                  class="border-solid border-2 border-black-200"
+                />
+              </div>
+            
+            <!-- <div class="elememts"> -->
+              
+              <div class="gender">
+                <label for="">Gender:</label>
+                <input type="radio" id="male" name="Gender" />
+                <label for="">male</label>
+                <input type="radio" id="Female" name="Gender" />
+                <label for="">Female</label>
+                <input type="radio" id="other" name="Gender" />
+                <label for="">other</label>
+              </div>
             </div>
-          </div>
-          <div class="elememts grid-cols-2 gap-2">
-            <div><label for="">last name:</label></div>
-            <div>
-              <input
-                type="text"
-                class="border-solid border-2 border-black-200"
-              />
-            </div>
-          </div>
-          <div class="elememts grid-cols-2 gap-2">
-            <div><label for="">Email:</label></div>
-            <div>
-              <input
-                type="email"
-                class="border-solid border-2 border-black-200"
-              />
-            </div>
-          </div>
-          <div class="elememts grid-cols-2 gap-2">
-            <div><label for="">Password:</label></div>
-            <div>
-              <input
-                type="password"
-                class="border-solid border-2 border-black-200"
-              />
-            </div>
-          </div>
-          <div class="elememts grid-cols-2 gap-2">
-            <div><label for="">confirm password:</label></div>
-            <div>
-              <input
-                type="password"
-                class="border-solid border-2 border-black-200"
-              />
-            </div>
-          </div>
-          <div class="elememts grid-cols-2 gap-2">
-            <div>
-              <button class="p-4 bg-[#1d4ed8] rounded-xl">Submit</button>
+            <div style="display: flex; justify-content: center">
+              <div>
+                <button
+                  style="
+                    background-color: burlywood;
+                    padding: 6px;
+                    border-radius: 10px;
+                    width: 140px;
+                  "
+                >
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>
