@@ -1,22 +1,22 @@
 p=int(input('ehter a prime number: '))
 a=int(input('enter a positive integer which is not divisivle by p: '))
 from math import pow
+from prime import check_prime
 
 # a^p-1 is congurnt to 1 (mod p)
 
 
 # check condition
 def check_condition(p,a):
-    if (a>0 and a%p==0):
+    if (a<1 or a%p==0):
         print("not a valid choice")
         a=int(input('enter a positive integer which is not divisivle by p: '))
         fermat_little(p,a)
         
-    elif(a<1):
-        print("not a valid choice")
-        a=int(input('enter a positive integer : '))
+    elif (check_prime(p)==False):
+        print("p is not a prime number")
+        p=int(input('enter a prime number: '))
         fermat_little(p,a)
-        
     else:
         return True
     
@@ -32,3 +32,5 @@ def fermat_little(p,a):
 fermat_little(p,a)
 
         
+
+
